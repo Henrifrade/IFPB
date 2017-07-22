@@ -6,11 +6,11 @@ Curso iniciado em 2017.1
 
 ## Conteudo
 
-1.LM
-2.APE
+* LM
+* APE
 
 
-##Apresentacao
+## Apresentacao
 
 ### LM
 
@@ -19,8 +19,8 @@ A disciplina de Linguagem de Marcação do Curso Superior de Tecnologia em Siste
 ### Desenvolvimento da cadeira
 
  * LM
-  * HTML
-  * CSS
+    * HTML
+    * CSS
 
 ### APE
 
@@ -30,4 +30,4 @@ Ao final da disciplina, o aluno deverá estar apto a construir programas de comp
 ### Desenvolvimento da cadeira
 
  * APE
-  * C
+    * C
