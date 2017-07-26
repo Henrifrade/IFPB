@@ -20,11 +20,11 @@ Eu gosto pra caramba de salgadinho, e a empresa é ficticia.
 ## Prototipos
 
 * Link do Wireframe
-<br>
+
 [Wireframe](Wireframe/)
 
 * Link do slide de apresentação
-<br>
+
 [Slide](https://pt.slideshare.net/fradehenrique/ifpb-projetolmsitebeto-dacoxinha)
 
 ## Screenshots
