@@ -7,7 +7,7 @@
 ## Descrição
 
 O site foi desenvolvido para solucionar a necessidade do marketing
-na internet para a lanchonete <b>Beto da coxinha</b>.
+na internet para a lanchonete <b>Beto da Coxinha</b>.
 
 ## Objetivo
 
@@ -21,7 +21,7 @@ Eu gosto pra caramba de salgadinho, e a empresa é ficticia.
 
 * Link do Wireframe
 
-  * [Wireframe](Wireframe/)
+  * [Wireframe](wireframe/)
 
 * Link do slide de apresentação
 

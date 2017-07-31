@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Beto da Coxinha - Contato</title>
+  <style>
+      #map {
+        width: 300px;
+        height: 300px;
+        background-color: grey;
+      }
+    </style>
+</head>
+<body>
+  <!-- Cabecalho -->
+  <header>
+
+  </header>
+
+  <!-- Corpo -->
+  <main>
+    <div>
+      <p>Sugestões ou pedidos?</p><br>
+      <p>Envie-nos por e-mail ou telefone</p>
+    </div>
+    <div class="telefones">
+      <div>
+        <p>Nossos telefones</p>
+      </div>
+      <div class="numeros">
+        <p>(83) 111-111-111<br>
+        Unidade: Geisel<br>
+        (83) 222-222-222<br>
+        Unidade: Centro<br>
+        (83) 333-333-333<br>
+        Unidade: Manaira</p>
+      </div>
+    </div>
+      <div class="formulario sugestao">
+        <select name="selecione" id="selecione opcao">
+          <option value="selecionar">Selecione uma opção</option>
+          <option value="pedido">Pedido</option>
+          <option value="sugestao">Sugestao</option>
+          <option value="reclamação">Reclamação</option>
+        </select><br>
+        <input type="email" name="email" placeholder="Digite seu email"><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"><br>
+        <textarea name="contato texto" rows="10" cols="40"></textarea>
+      </div>
+    <div>
+      <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -7.137, lng: -34.876};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVuP0pQgxY4DkBPUkumnfsbRe8wyIL_Uk&callback=initMap">
+    </script>
+    </div>
+  </main>
+
+  <!-- Rodape -->
+  <footer>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <p>Todos os direitos reservados a BETO DA COXINHA.</p>
+    </div>
+  </footer>
+</body>
+</html>
