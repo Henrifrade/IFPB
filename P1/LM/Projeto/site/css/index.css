@@ -1,58 +1,104 @@
-.menu {
-  height: 80px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #cc2126;
+body {
+  margin: 0;
 }
-/*.menu.select {
-    height: auto;
-    width: auto;
-    border-radius: 50px;
-    overflow: hidden;
-}*/
-.menu h1 {
+.wrap {
+  display: grid;
+  grid-template-columns: span 4;
+  grid-template-rows: span 6;
+  grid-template-areas:
+  "header header header"
+  "slider slider slider"
+  "options options options"
+  "ifood ifood ifood"
+  "footer footer footer";
+  min-height: 100vh;
+  border: 1px solid red;
+  background-color: white;
+}
+
+/* grid */
+
+.masthead {
+  border: 1px solid red;
+  grid-area: header;
+}
+
+
+.main-slide {
+  border: 1px solid red;
+  grid-area: slider;
+}
+
+.main-options {
+  border: 1px solid red;
+  grid-area: options;
+}
+.main-ifood {
+  border: 1px solid red;
+  grid-area: ifood;
+}
+
+.foots {
+  border: 1px solid red;
+  grid-area: footer;
+}
+
+/* media screens */
+
+/* default old */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* iphone 5s */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* menu */
+
+.masthead {
+    background-color: red;
+}
+
+.masthead img {
+  border: 1px solid blue;
+}
+.masthead h1 {
+  color: #fff;
   font-family: 'Courgette', cursive;
-  color: #fff;
+  border: 1px solid blue;
 }
-.menu.social i {
+.masthead.logo {
+  grid-row: 1/4;
+}
+.masthead.list {
+  grid-row: 2/4;
+}
+.main-content {
+  grid-column: 1/4;
+}
+.foots {
+  grid-column: 1/4;
+}
+.social i {
   height: auto;
   width: auto;
-  color: #fff;
   font-size: 35px;
+  border: 1px solid blue;
 }
-.menu.social span {
-  padding-left: 15px;
-}
-.menu.lista {
-  background: #f7af2a;
-  height: auto;
-  width: auto;
-}
-.menu.lista span {
-  padding-left: 25px;
-}
-.menu.lista.item a {
+.lista.item a {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  color: #fff;
   text-decoration: none;
+  border: 1px solid blue;
 }
-.logo {
-  display: flex;
-  align-items: stretch;
-}
-.menu.lista ul {
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-}
-.menu.lista li a {
-  margin: 10px;
-  border-radius: 50px;
-  text-align: center;
-  padding: 14px 16px;
-}
-.menu li a:hover {
-  background-color: #b01e23;
+
+/* slide */
+
+.main-slide img{
+  width: 100%;
 }
