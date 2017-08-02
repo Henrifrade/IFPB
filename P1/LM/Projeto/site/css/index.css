@@ -1,104 +1,169 @@
 body {
   margin: 0;
 }
-.wrap {
-  display: grid;
-  grid-template-columns: span 4;
-  grid-template-rows: span 6;
-  grid-template-areas:
-  "header header header"
-  "slider slider slider"
-  "options options options"
-  "ifood ifood ifood"
-  "footer footer footer";
-  min-height: 100vh;
-  border: 1px solid red;
-  background-color: white;
+
+
+/* Header */
+
+.header-content {
+  background-color: #cf2127;
+  max-height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* grid */
-
-.masthead {
-  border: 1px solid red;
-  grid-area: header;
+.logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid blue;*/
+}
+.logo h1 {
+  color: #fff;
+  font-family: 'Courgette', cursive;
+  /*border: 1px solid blue;*/
+}
+.logo img {
+  width: 64px;
+  height: 64px;
+  /*border: 1px solid blue;*/
+}
+.logo img:hover {
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+}
+.list-a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+  /*border: 1px solid blue;*/
 }
 
-
-.main-slide {
-  border: 1px solid red;
-  grid-area: slider;
+.list-a li {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+.list-a li:hover {
+  background-color: #f7af2a;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+.list-a span {
+  padding: 10px;
+}
+.list-a a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  /*border: 1px solid blue;*/
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  /*border: 1px solid blue;*/
+}
+.social a{
+  /*border: 1px solid blue;*/
+}
+.social span {
+  padding: 10px;
+}
+.social i{
+  color: #fff;
+  font-size: 40px;
+}
+.hamburguer {
+  display: none;
+  align-items: center;
+  margin-right: 10%;
+}
+.sidenav {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #cf2127;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 30px;
+    text-align: center;
 }
 
-.main-options {
-  border: 1px solid red;
-  grid-area: options;
-}
-.main-ifood {
-  border: 1px solid red;
-  grid-area: ifood;
-}
+.sidenav a {
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
 
-.foots {
-  border: 1px solid red;
-  grid-area: footer;
 }
 
-/* media screens */
+.sidenav a:hover{
+    color: #f7af2a;
+}
 
-/* default old */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Main */
+
+/* Slide */
+
+
+.slide video{
+  width: 100%;
+}
+
+/* Footer */
+
+/* media query */
+
+/* screen 1024 */
 @media screen and (max-width: 1024px) {
   body {
     background-color: yellow;
+  }
+  .list-a {
+    flex-wrap: wrap;
+  }
+  .list-a a{
+    font-size: 1em;
   }
 }
 /* iphone 5s */
 @media screen and (max-width: 640px) {
   body {
-    background-color: blue;
-  }
-}
-
-/* menu */
-
-.masthead {
     background-color: red;
-}
-
-.masthead img {
-  border: 1px solid blue;
-}
-.masthead h1 {
-  color: #fff;
-  font-family: 'Courgette', cursive;
-  border: 1px solid blue;
-}
-.masthead.logo {
-  grid-row: 1/4;
-}
-.masthead.list {
-  grid-row: 2/4;
-}
-.main-content {
-  grid-column: 1/4;
-}
-.foots {
-  grid-column: 1/4;
-}
-.social i {
-  height: auto;
-  width: auto;
-  font-size: 35px;
-  border: 1px solid blue;
-}
-.lista.item a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid blue;
-}
-
-/* slide */
-
-.main-slide img{
-  width: 100%;
+  }
+  .list-a {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+  .hamburguer {
+    display: flex;
+  }
 }

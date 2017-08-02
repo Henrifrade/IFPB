@@ -5,55 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="shortcut icon" type="image/png" href="./images/logo16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <title>Beto da Coxinha</title>
 </head>
 <body>
-  <div class="wrap">
+  <!-- script hamburguer menu -->
+  <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
 
-  <header class="masthead">
-    <!-- Cabeçalho -->
-    <div class="logo">
-        <img src="./images/logo64x64.png" alt="Logo">
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+  <!-- Header -->
+
+  <header class="header-content">
+
+  <!-- Logo -->
+
+    <section class="logo">
+        <img src="./images/logo2.png" alt="Logo">
         <h1>Beto da Coxinha</h1>
+    </section>
+
+  <!-- Header menu -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Inicio</a>
+      <a href="monte+seu+pedido.html">Monte seu pedido</a>
+      <a href="#ifood">iFood</a>
+      <a href="contato.html">Contato</a>
     </div>
-      <div class="list">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Inicio</a>
-            </li>
-            <span></span>
-            <li>
-              <a href="monte+seu+pedido.html">Monte seu pedido</a>
-            </li>
-            <span></span>
-            <li>
-              <a href="#ifood">iFood</a>
-            </li>
-            <span></span>
-            <li>
-              <a href="contato.html">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="social">
-          <a href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+
+    <section class="list-a">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
           <span></span>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-      </div>
+          <li>
+            <a href="monte+seu+pedido.html">Monte seu pedido</a>
+          </li>
+          <span></span>
+          <li>
+            <a href="#ifood">iFood</a>
+          </li>
+          <span></span>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Social icons -->
+
+    <section class="social">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+      <span></span>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </section>
+
+    <section class="hamburguer">
+      <span style="color:#fff;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </section>
+
   </header>
 
-  <!-- Conteudo -->
-  <main class="main-content">
-    <!-- Slider -->
-    <div class="main-slide">
-          <img src="./images/slide1.jpg" alt="coxinhas">
-    </div>
+  <!-- Main -->
 
-      <div class="main-options">
+  <main class="main-content">
+
+    <!-- Slider -->
+
+    <section class="slide">
+          <video width="100%" height="100%" autoplay loop>
+            <source src="./videos/video1.mp4" type="video/mp4">
+          </video>
+          <!-- <img src="./images/slide1.jpg" alt="coxinhas"> -->
+    </section>
+
+    <!-- Main menu -->
+
+      <section class="options">
         <h2>Faça seu pedido online!</h2>
       <div>
         <p>Combo 1:<br>Lorem ipsum + ipsum + lorem</p>
@@ -67,36 +107,51 @@
       <div>
         <p>Personalizado:<br>Monte do seu jeito!</p>
       </div>
-    </div>
-    <div id="ifood" class="main-ifood">
+    </section>
+
+    <!-- Ifood -->
+
+    <section id="ifood" class="ifood">
+
       <div>
         <p>Beto da Coxinha tambem no ifood!<br>
           Uma maneira mais rapidas de pedir seu lanche!</p>
       </div>
+
       <div>
         <img src="#" alt="iFood">
       </div>
-    </div>
 
+    </section>
 
   </main>
 
-  <!-- Rodape -->
-  <footer class="foots">
-    <div>
+  <!-- Footer -->
+
+  <footer class="footer-content">
+
+    <!-- Footer menu -->
+
+    <section class="list-b">
       <nav>
         <ul>
           <li>
             <a href="index.html">Inicio</a>
           </li>
-          <li>Contato</li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
         </ul>
       </nav>
-    </div>
+    </section>
+
+    <!-- Copyright -->
+
     <div>
       <p>Todos os direitos reservados a BETO DA COXINHA.</p>
     </div>
+
   </footer>
-</div>
+
 </body>
 </html>
