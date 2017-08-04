@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/contato.css">
+  <link rel="shortcut icon" type="image/png" href="./images/logo16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <title>Beto da Coxinha - Contato</title>
   <style>
       #map {
@@ -14,53 +18,40 @@
     </style>
 </head>
 <body>
-  <!-- Cabecalho -->
-  <header>
 
-  </header>
+    <!-- script hamburguer menu -->
 
-  <!-- Corpo -->
-  <main>
-    <div>
-      <p>Sugestões ou pedidos?</p><br>
-      <p>Envie-nos por e-mail ou telefone</p>
-    </div>
-    <div class="telefones">
-      <div>
-        <p>Nossos telefones</p>
-      </div>
-      <div class="numeros">
-        <p>(83) 111-111-111<br>
-        Unidade: Geisel<br>
-        (83) 222-222-222<br>
-        Unidade: Centro<br>
-        (83) 333-333-333<br>
-        Unidade: Manaira</p>
-      </div>
-    </div>
-      <div class="formulario sugestao">
-        <select name="selecione" id="selecione opcao">
-          <option value="selecionar">Selecione uma opção</option>
-          <option value="pedido">Pedido</option>
-          <option value="sugestao">Sugestao</option>
-          <option value="reclamação">Reclamação</option>
-        </select><br>
-        <input type="email" name="email" placeholder="Digite seu email"><br>
-        <input type="text" name="nome" placeholder="Digite seu nome"><br>
-        <textarea name="contato texto" rows="10" cols="40"></textarea>
-      </div>
-    <div>
-      <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <!-- script google maps -->
+
     <script>
       function initMap() {
         var uluru = {lat: -7.137, lng: -34.876};
+        var manaira = { lat: -7.099, lng: -34.847};
+        var geisel = { lat: -7.177, lng: -34.874};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 12,
           center: uluru
+
         });
         var marker = new google.maps.Marker({
           position: uluru,
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: manaira,
+          map: map
+        });var marker = new google.maps.Marker({
+          position: geisel,
           map: map
         });
       }
@@ -68,24 +59,112 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVuP0pQgxY4DkBPUkumnfsbRe8wyIL_Uk&callback=initMap">
     </script>
+    <!-- Header -->
+
+    <header id="inicio" class="header-content">
+
+    <!-- Logo -->
+
+      <section class="logo">
+          <img src="./images/logo2.png" alt="Logo">
+          <h1>Beto da Coxinha</h1>
+      </section>
+
+    <!-- Header menu -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <a href="index.html">Inicio</a>
+        <a href="monte+seu+pedido.html">Monte seu pedido</a>
+        <a href="index.html#ifood">iFood</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <section class="list-a">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="monte+seu+pedido.html">Monte seu pedido</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="index.html#ifood">iFood</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Social icons -->
+
+      <section class="social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <span></span>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+      </section>
+
+      <section class="hamburguer">
+        <span style="color:#fff;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </section>
+
+    </header>
+
+
+  <!-- Main -->
+  <main class="main-content">
+    <section class="main-box">
+    <div>
+      <h2>Sugestões ou pedidos?</h2><br>
+      <p>Envie-nos por e-mail ou telefone</p>
     </div>
+    <div class="contacts">
+      <div>
+        <p>Nossos telefones</p>
+      </div>
+      <div class="contacts-numbers">
+        <h3>(83) 111-111-111<br>
+        Unidade: Geisel<br><br>
+        (83) 222-222-222<br>
+        Unidade: Jaguaribe<br><br>
+        (83) 333-333-333<br>
+        Unidade: Manaira</h3>
+      </div>
+    </div>
+      <div class="form">
+        <select name="selecione" id="selecione opcao">
+          <option value="selecionar">Selecione uma opção</option>
+          <option value="pedido">Pedido</option>
+          <option value="sugestao">Sugestao</option>
+          <option value="reclamação">Reclamação</option>
+        </select><br><br>
+        <input type="email" name="email" placeholder="Digite seu email"><br><br>
+        <input type="text" name="nome" placeholder="Digite seu nome"><br><br>
+        <textarea name="contato texto" rows="10" cols="40"></textarea>
+        <br><br><input type="submit" value="Enviar">
+      </div>
+    <div class="find">
+      <h3>Onde nos encontrar</h3>
+    <div id="map"></div>
+    </div>
+  </section>
   </main>
 
-  <!-- Rodape -->
-  <footer>
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <p>Todos os direitos reservados a BETO DA COXINHA.</p>
-    </div>
+
+  <!-- Footer -->
+
+  <footer class="footer-content">
+    <a href="#inicio">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+    <!-- Copyright -->
+      <p>Todos os direitos reservados a BETO DA COXINHA &copy;</p>
   </footer>
 </body>
 </html>

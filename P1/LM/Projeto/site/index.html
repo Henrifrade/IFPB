@@ -11,7 +11,9 @@
   <title>Beto da Coxinha</title>
 </head>
 <body>
+
   <!-- script hamburguer menu -->
+
   <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "100%";
@@ -21,9 +23,10 @@
         document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+
   <!-- Header -->
 
-  <header class="header-content">
+  <header id="inicio" class="header-content">
 
   <!-- Logo -->
 
@@ -35,7 +38,7 @@
   <!-- Header menu -->
 
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
       <a href="#">Inicio</a>
       <a href="monte+seu+pedido.html">Monte seu pedido</a>
       <a href="#ifood">iFood</a>
@@ -91,37 +94,52 @@
           <!-- <img src="./images/slide1.jpg" alt="coxinhas"> -->
     </section>
 
+      <!-- Presentation -->
+
+      <section class="presentation">
+        <div class="presentation-box">
+          <h2>Lanche bom e barato</h2>
+          <p>Pra bater forte na concorrencia com tia Gerlane</p>
+          <a href="#options" class="btn-intro">Confira</a>
+        </div>
+      </section>
+
     <!-- Main menu -->
 
-      <section class="options">
+      <section id="options" class="options">
         <h2>Faça seu pedido online!</h2>
-      <div>
-        <p>Combo 1:<br>Lorem ipsum + ipsum + lorem</p>
-      </div>
-      <div>
-        <p>Combo 2:<br>Lorem ipsum + ipsum + lorem</p>
-      </div>
-      <div>
-        <p>Combo 3:<br>Lorem ipsum + ipsum + lorem</p>
-      </div>
-      <div>
-        <p>Personalizado:<br>Monte do seu jeito!</p>
+        <div class="options-canvas">
+        <section class="combo-1">
+          <a href="monte+seu+pedido.html">
+            <p>Combo 1:<br>10 Coxinhas + 10 Pasteis + 1 Refrigerante</p>
+          </a>
+        </section>
+        <section class="combo-2">
+          <a href="monte+seu+pedido.html">
+            <p>Combo 2:<br>6 Coxinhas + 6 Risoles + 1 Refrigerante</p>
+          </a>
+        </section>
+        <section class="combo-3">
+          <a href="monte+seu+pedido.html">
+            <p>Combo 3:<br> 4 Coxinhas + 4 Empadas + 1 Refrigerante</p>
+          </a>
+        </section>
+        <section class="combo-4">
+          <a href="monte+seu+pedido.html">
+            <p>Personalizado:<br>Monte do seu jeito!</p>
+          </a>
+        </section>
       </div>
     </section>
 
     <!-- Ifood -->
 
     <section id="ifood" class="ifood">
-
-      <div>
-        <p>Beto da Coxinha tambem no ifood!<br>
+        <p>Beto da Coxinha tambem no ifood<br><br>
           Uma maneira mais rapidas de pedir seu lanche!</p>
-      </div>
-
-      <div>
-        <img src="#" alt="iFood">
-      </div>
-
+        <a href="http://ifood.com.br/" target="_blank">
+          <img src="./images/logo-ifood.svg" alt="iFood">
+        </a>
     </section>
 
   </main>
@@ -129,28 +147,11 @@
   <!-- Footer -->
 
   <footer class="footer-content">
-
-    <!-- Footer menu -->
-
-    <section class="list-b">
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Inicio</a>
-          </li>
-          <li>
-            <a href="contato.html">Contato</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-
+    <a href="#inicio">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
     <!-- Copyright -->
-
-    <div>
-      <p>Todos os direitos reservados a BETO DA COXINHA.</p>
-    </div>
-
+      <p>Todos os direitos reservados a BETO DA COXINHA &copy;</p>
   </footer>
 
 </body>

@@ -4,200 +4,287 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/monte.css">
+  <link rel="shortcut icon" type="image/png" href="./images/logo16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <title>Beto da Coxinha - Monte seu pedido</title>
 </head>
 <body>
-  <header>
-    <!-- menu a ser add -->
-  </header>
 
-  <main>
+    <!-- script hamburguer menu -->
 
-    <div class="msg-header">
-      <div class="msg-title">
-        <p>Escolha as opções, os sabores, e as quantidades</p>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <!-- Header -->
+
+    <header id="inicio" class="header-content">
+
+    <!-- Logo -->
+
+      <section class="logo">
+          <img src="./images/logo2.png" alt="Logo">
+          <h1>Beto da Coxinha</h1>
+      </section>
+
+    <!-- Header menu -->
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <a href="index.html">Inicio</a>
+        <a href="monte+seu+pedido.html">Monte seu pedido</a>
+        <a href="index.html#ifood">iFood</a>
+        <a href="contato.html">Contato</a>
       </div>
-      <div class="msg-title2">
-        <p>Valor total</p>
-      </div>
+
+      <section class="list-a">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <span></span>
+            <li>
+                <a href="monte+seu+pedido.html">Monte seu pedido</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="index.html#ifood">iFood</a>
+            </li>
+            <span></span>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Social icons -->
+
+      <section class="social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        <span></span>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+      </section>
+
+      <section class="hamburguer">
+        <span style="color:#fff;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </section>
+
+    </header>
+
+
+  <main class="main-content">
+
+    <section class="main-header">
+    <div class="main-box a">
+      <p>
+        <i class="fa fa-cutlery" aria-hidden="true"></i>
+        Escolha as opções, os sabores, e as quantidades:
+      </p>
     </div>
+    <div class="main-box b">
+      <p><i class="fa fa-usd" aria-hidden="true"></i>
+        Valor total:
+      </p>
+    </div>
+  </section>
+
+  <section class="main-principal">
+
+  <section class="main-opt">
+  <div class="main-box c">
     <form method="post">
-    <div class="opcoes">
-      <div class="opcoes-pedidos">
-        <div class="opcoes-opt1">
+        <div class="main-options a">
           <div class="radio1">
-            <input type="radio" id="op1a" name="tiposalgado" value="coxinha">
+            <input type="radio" name="tiposalgado" id="opt" value="coxinha">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Coxinha</p>
           </div>
           <div class="radio2">
-            <label><input type="checkbox" id="op1b" name="op1a" value="frango1">Frango</label>
-            <label><input type="checkbox" id="op1c" name="op1b" value="mista1">Mista</label>
+            <input type="checkbox" id="op2b" name="op2a" value="frango2">Frango
+            <input type="checkbox" id="op2c" name="op2b" value="queijo2">Queijo
           </div>
           <div class="text1">
-            <input type="text"id="text1a" name="text"><br>
-            <input type="text" id="text1b" name="text">
+            <input type="text" id="text2a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text2b" name="text" placeholder="Qnt">
           </div>
         </div>
-        <div class="opcoes-opt2">
+        <div class="main-options b">
           <div class="radio1">
-            <input type="radio" id="op2a" name="tiposalgado" value="pastel">
+            <input type="radio" name="tiposalgado"  id="opt" value="pastel">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Pastel</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op2b" name="op2a" value="frango2">
-            <input type="checkbox" id="op2c" name="op2b" value="queijo2">
+            <input type="checkbox" id="op2b" name="op2a" value="frango2">Frango
+            <input type="checkbox" id="op2c" name="op2b" value="queijo2">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text2a" name="text"><br>
-            <input type="text" id="text2b" name="text">
+            <input type="text" id="text2a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text2b" name="text" placeholder="Qnt">
           </div>
         </div>
-        <div class="opcoes-opt3">
+        <div class="main-options c">
           <div class="radio1">
-            <input type="radio" id="op3a" name="tiposalgado" value="paopizza">
+            <input type="radio" id="opt" name="tiposalgado" value="paopizza">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Pão Pizza</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op3b" name="op3a" value="frango3">
-            <input type="checkbox" id="op3c" name="op3b" value="mista3">
+            <input type="checkbox" id="op3b" name="op3a" value="frango3">Frango
+            <input type="checkbox" id="op3c" name="op3b" value="mista3">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text3a" name="text"><br>
-            <input type="text" id="text3b" name="text">
+            <input type="text" id="text3a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text3b" name="text" placeholder="Qnt">
           </div>
-        </div><div class="opcoes-opt4">
+        </div>
+        <div class="main-options d">
           <div class="radio1">
-            <input type="radio" id="op4a" name="tiposalgado" value="empada">
+            <input type="radio" id="opt" name="tiposalgado" value="empada">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Empada</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op4b" name="op4a" value="frango4">
-            <input type="checkbox" id="op4c" name="op4b" value="queijo4">
+            <input type="checkbox" id="op4b" name="op4a" value="frango4">Frango
+            <input type="checkbox" id="op4c" name="op4b" value="queijo4">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text4a" name="text"><br>
-            <input type="text" id="text4b" name="text">
+            <input type="text" id="text4a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text4b" name="text" placeholder="Qnt">
           </div>
-        </div><div class="opcoes-opt5">
+        </div>
+        <div class="main-options e">
           <div class="radio1">
-            <input type="radio" id="op5a" name="tiposalgado" value="risole">
+            <input type="radio" id="opt" name="tiposalgado" value="risole">
           </div>
-          <div class="opcoes-texto1">
-            <p>Risole</p>
+          <div class="options-text">
+            <p>Risole frito</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op5b" name="op5a" value="frango1">
-            <input type="checkbox" id="op5c" name="op5b" value="mista1">
+            <input type="checkbox" id="op5b" name="op5a" value="frango1">Frango
+            <input type="checkbox" id="op5c" name="op5b" value="mista1">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text5a" name="text"><br>
-            <input type="text" id="text5b" name="text">
+            <input type="text" id="text5a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text5b" name="text" placeholder="Qnt">
           </div>
-        </div><div class="opcoes-opt6">
+        </div>
+        <div class="main-options f">
           <div class="radio1">
-            <input type="radio" id="op6a" name="tiposalgado" value="enroladinho">
+            <input type="radio" id="opt" name="tiposalgado" value="enroladinho">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Enroladinho</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op6b" name="op6a" value="frango1">
-            <input type="checkbox" id="op6c" name="op6b" value="mista1">
+            <input type="checkbox" id="op6b" name="op6a" value="frango1">Frango
+            <input type="checkbox" id="op6c" name="op6b" value="mista1">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text6a" name="text"><br>
-            <input type="text" id="text6b" name="text">
+            <input type="text" id="text6a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text6b" name="text" placeholder="Qnt">
           </div>
-        </div><div class="opcoes-opt7">
+        </div>
+        <div class="main-options g">
           <div class="radio1">
-            <input type="radio" id="op7a" name="tiposalgado" value="coxao">
+            <input type="radio" id="opt" name="tiposalgado" value="coxao">
           </div>
-          <div class="opcoes-texto1">
-            <p>Coxão</p>
+          <div class="options-text">
+            <p>Coxão gigante</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op7b" name="op7a" value="frango1">
-            <input type="checkbox" id="op7c" name="op7b" value="mista1">
+            <input type="checkbox" id="op7b" name="op7a" value="frango1">Frango
+            <input type="checkbox" id="op7c" name="op7b" value="mista1">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text7a" name="text"><br>
-            <input type="text" id="text7b" name="text">
+            <input type="text" id="text7a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text7b" name="text" placeholder="Qnt">
           </div>
-        </div><div class="opcoes-opt8">
+        </div>
+        <div class="main-options h">
           <div class="radio1">
-            <input type="radio" id="op8a" name="tiposalgado" value="pasteldeforno">
+            <input type="radio" id="opt" name="tiposalgado" value="pasteldeforno">
           </div>
-          <div class="opcoes-texto1">
+          <div class="options-text">
             <p>Pastel de forno</p>
           </div>
           <div class="radio2">
-            <input type="checkbox" id="op8b" name="op8a" value="frango1">
-            <input type="checkbox" id="op8c" name="op8b" value="mista1">
+            <input type="checkbox" id="op8b" name="op8a" value="frango1">Frango
+            <input type="checkbox" id="op8c" name="op8b" value="mista1">Queijo
           </div>
           <div class="text1">
-            <input type="text" id="text8a" name="text"><br>
-            <input type="text" id="text8b" name="text">
+            <input type="text" id="text8a" name="text" placeholder="Qnt"><br>
+            <input type="text" id="text8b" name="text" placeholder="Qnt">
           </div>
         </div>
       </div>
-
-      <div class="opcoes-pedidos2">
+    </div>
+  </section>
+  <section class="main-opt-payment">
+        <div class="main-box d">
         <div class="valor pagamento">
-          <p>R$ XX,XX</p>
+          <p style="font-size:4em;color:green;">Grátis</p>
         </div>
-        <div>
-          <p>Formas de pagamento</p>
-        </div>
-        <div class="opcoes pagamento">
-          <img src="#" alt="Mastercard">
-          <p>Mastercard</p>
+      </div>
+        <div class="main-box e">
+          <p>Forma de envio</p>
+          <div class="flags a">
+            <i class="fa fa-motorcycle" aria-hidden="true"> Motoboy</i>
+            <input type="radio" name="optpagamento" value="motoboy">
+          </div>
+          <i>ou</i>
+          <div class="flags b">
+            <i class="fa fa-truck" aria-hidden="true"> iFood</i>
+            <input type="radio" name="optpagamento" value="motoboy">
+          </div>
+          <hr>
+            <p>Forma de pagamento</p>
+        <div class="flags 1">
+          <i class="fa fa-cc-mastercard" aria-hidden="true">Mastercard</i>
           <input type="radio" name="optpagamento" value="mastercard">
         </div>
-        <div class="opcoes pagamento">
-          <img src="#" alt="Visa">
-          <p>Visa</p>
+        <div class="flags 2">
+          <i class="fa fa-cc-visa" aria-hidden="true">Visa</i>
           <input type="radio" name="optpagamento" value="visa">
         </div>
-        <div class="opcoes pagamento">
-          <img src="#" alt="PagSeguro">
-          <p>PagSeguro</p>
+        <div class="flags 3">
+          <i class="fa fa-product-hunt" aria-hidden="true">Pagseguro</i>
           <input type="radio" name="optpagamento" value="pagseguro">
         </div>
-        <div class="opcoes pagamento">
-          <img src="#" alt="Paypal">
-          <p>Paypal</p>
+        <div class="flags 4">
+          <i class="fa fa-paypal" aria-hidden="true">Paypal</i>
           <input type="radio" name="optpagamento" value="paypal">
         </div>
+        <br>
+          <input type="submit" name="confirmar" value="confirmar">
       </div>
-      <div>
-        <input type="submit" name="confirmar" value="confirmar">
-      </div>
-    </div>
     </form>
+  </section>
+  </section>
   </main>
 
-  <footer>
-    <div>
-      <nav>
-        <ul>
-          <li>
-          <a href="index.html">Inicio</a>
-          </li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <p>Todos os direitos reservados a BETO DA COXINHA.</p>
-    </div>
+  <!-- Footer -->
+
+  <footer class="footer-content">
+    <a href="#inicio">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+    <!-- Copyright -->
+      <p>Todos os direitos reservados a BETO DA COXINHA &copy;</p>
   </footer>
 
 </body>
