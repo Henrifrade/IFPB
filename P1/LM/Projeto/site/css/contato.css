@@ -131,54 +131,47 @@ body {
 }
 
 /* Main */
-
 .main-content {
-  background-color: #fff7bf;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: [col] 1fr [col] 1fr [col] 1fr;
+  padding: 10px;
+  background-color: #cf2127;
 }
-.main-box {
-  grid-column: col 2 / span 1;
-  grid-row: 1;
-  grid-template: none;
+.contacts-header {
+  margin-top: 80px;
+  display:block;
+  text-align: center;
+  padding: 5px;
+  background-color: #b70000;
+  color:#fff;
+}
+.contacts-main-box {
   display: flex;
   justify-content: center;
-  text-align: center;
-  flex-flow: column;
-  background-color: #cf2127;
+  background-color: #FFC025;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.contacts-numbers {
   padding: 20px;
-  border-radius: 20px;
-  color: #fff;
-  padding-bottom: 30px;
-}
-.main-box h2, h3 {
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #f7af2a;
-  font-size: 1.3em;
-}
-
-.find {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+.form {
+  padding: 20px;
+  color: #fff;
+  background-color: #D76A20;
 }
 
-input {
-  font-size: 16px;
-  height: 5vh;
-  width: 26vw;
+.title-find {
+  background-color: #fff;
+  padding: 5px;
+  background-color: #b70000;
+  color:#fff;
+  text-align: center;
 }
 
-input[type="submit"] {
-  border-color: #f7af2a;
-  background-color: #f7af2a;
-  border-radius: 20px;
-  width: 26vw;
-  height: 10vh;
+#map {
+  height: 300px;
+  background-color: grey;
 }
-
 
 /* Footer */
 
@@ -201,8 +194,7 @@ input[type="submit"] {
 }
 
 /* Media screen */
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 769px) {
 
   .list-a {
     display: none;
@@ -216,4 +208,53 @@ input[type="submit"] {
   .hamburguer {
     display: flex;
   }
+
+  /* Main */
+
+  .main-content {
+    background-color: #cf2127;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: [col] 1fr [col] 1fr [col] 1fr;
+  }
+  .main-box {
+    grid-column: col 2 / span 1;
+    grid-row: 1;
+    grid-template: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  .main-box h2, h3 {
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  .title-find {
+    background-color: #fff;
+    padding: 5px;
+    background-color: #b70000;
+    color:#fff;
+    text-align: center;
+  }
+
+  #map {
+    height: 300px;
+    background-color: grey;
+  }
+
+  input {
+    font-size: 16px;
+    height: 5vh;
+    width: 26vw;
+  }
+
+  input[type="submit"] {
+    width: 26vw;
+    height: 10vh;
+  }
+
 }

@@ -134,7 +134,7 @@ body {
 
 .main-content {
   padding: 10px;
-  background-color: #fff7bf;
+  background-color: #cf2127;
 }
 .main-header {
   padding: 20px;
@@ -190,18 +190,17 @@ body {
 }
 .main-box {
   color: #fff;
-  border-radius: 20px;
   padding: 10px;
 }
 
 .main-box.a {
-  background-color: #ffbe3b;
+  background-color: #bf0000;
   text-align: center;
   flex-grow: 1;
 }
 .main-box.b {
   text-align: center;
-  background-color: #ffbe3b;
+  background-color: #bf0000;
   margin-left: 20vw;
   flex-grow: 1;
 }
@@ -219,7 +218,7 @@ body {
   flex-grow: 1;
 }
 .main-box.e {
-  background-color: #cf2127;
+  background-color: #bf0000;
   text-align: center;
   padding: 10px;
   flex-grow: 1;
@@ -228,7 +227,6 @@ body {
   padding: 5px;
   background-color: #991c1e;
   color: #fff;
-  border-radius: 10px;
   font-size: 1.2em;
 }
 .flags {

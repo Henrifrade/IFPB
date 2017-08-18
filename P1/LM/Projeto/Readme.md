@@ -15,7 +15,8 @@ Visando expandir as vendas para outras regiões da grande João Pessoa, o site f
 
 ## Inspiração
 
-Eu gosto pra caramba de salgadinho, e a empresa é ficticia.
+http://www.coxinhanobalde.com.br/
+http://www.socoxinhas.com/
 
 ## Prototipos
 
@@ -29,4 +30,4 @@ Eu gosto pra caramba de salgadinho, e a empresa é ficticia.
 
 ## Screenshots
 
-Links a serem adicionados
+* [Telas](screenshots/)

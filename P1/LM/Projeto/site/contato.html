@@ -9,13 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <title>Beto da Coxinha - Contato</title>
-  <style>
-      #map {
-        width: 300px;
-        height: 300px;
-        background-color: grey;
-      }
-    </style>
 </head>
 <body>
 
@@ -120,23 +113,20 @@
   <!-- Main -->
   <main class="main-content">
     <section class="main-box">
-    <div>
+    <div class="contacts-header">
       <h2>Sugestões ou pedidos?</h2><br>
-      <p>Envie-nos por e-mail ou telefone</p>
+      <h3>Envie-nos por e-mail ou telefone</h3>
     </div>
-    <div class="contacts">
-      <div>
-        <p>Nossos telefones</p>
-      </div>
+    <div class="contacts-main-box">
       <div class="contacts-numbers">
-        <h3>(83) 111-111-111<br>
+        <h2>Nossos telefones:</h2>
+        <p>(83) 111-111-111<br>
         Unidade: Geisel<br><br>
         (83) 222-222-222<br>
         Unidade: Jaguaribe<br><br>
         (83) 333-333-333<br>
-        Unidade: Manaira</h3>
+        Unidade: Manaira</p>
       </div>
-    </div>
       <div class="form">
         <select name="selecione" id="selecione opcao">
           <option value="selecionar">Selecione uma opção</option>
@@ -144,14 +134,16 @@
           <option value="sugestao">Sugestao</option>
           <option value="reclamação">Reclamação</option>
         </select><br><br>
-        <input type="email" name="email" placeholder="Digite seu email"><br><br>
+        <input type="email" name="email" placeholder="Digite seu email">
         <input type="text" name="nome" placeholder="Digite seu nome"><br><br>
-        <textarea name="contato texto" rows="10" cols="40"></textarea>
+        <textarea name="contato texto" rows="10" cols="41"></textarea>
         <br><br><input type="submit" value="Enviar">
       </div>
-    <div class="find">
-      <h3>Onde nos encontrar</h3>
-    <div id="map"></div>
+    </div>
+      <div class="title-find">
+          <h3>Onde nos encontrar</h3>
+      </div>
+    <div class="find" id="map">
     </div>
   </section>
   </main>
